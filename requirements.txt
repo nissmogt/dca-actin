@@ -1,0 +1,7 @@
+pydca==1.23
+numba==0.65.1
+numpy==2.4.6
+biopython==1.87
+pandas
+scipy
+matplotlib
