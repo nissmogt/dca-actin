@@ -1,0 +1,16 @@
+{
+ "La": 410,
+ "Lp": 127,
+ "actin_block": [
+  0,
+  410
+ ],
+ "profilin_block": [
+  410,
+  537
+ ],
+ "n_paired": 1312,
+ "actin_pfam": "PF00022",
+ "profilin_pfam": "PF00235",
+ "pairing": "one least-gapped representative per species mnemonic; clade-level codes dropped"
+}
