@@ -63,3 +63,17 @@ engine is the current constraint.
 - `results/paired_interface_pairs.csv` — inter-block pairs ranked, residue-annotated
 - `results/paired_ppv.csv`, `results/paired_interface.png`
 - `src/run_paired_dca.py`
+
+## Control: paralog augmentation does not rescue depth
+To test whether the clean 1:1 pairing was throwing away usable diversity, we
+re-ran with **all profilin paralogs per species** (kept clade-level codes too),
+paired to each species' representative actin: 6,447 rows (5× more) at the same
+length 537. Reweighting (seqid 0.8) collapsed the added paralogs almost entirely
+— **Neff rose only 397 → 481 (Neff/L 0.74 → 0.90)** — and the interface still did
+not emerge (top-100 PPV = 0, AUC = 0.460, best true contact rank #467). Within-
+species profilin paralogs are too similar to their orthologs to add *effective*
+diversity. This confirms the limit is genuine sequence diversity (deep taxonomic
+sampling), not the pairing rule. The real levers are a **plmDCA engine** (more
+information-efficient at low Neff) or a **partner with intrinsically more
+diversity and a larger interface** (Arp2/3, formin FH2). Files:
+`data/aln/actin_profilin_paired_aug.fasta`, `src/run_paired_dca_aug.py`.
