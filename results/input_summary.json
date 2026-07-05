@@ -1,0 +1,15 @@
+{
+  "pfam": "PF00022 (Actin), release PF00022.27",
+  "alignment_source": "InterPro API full alignment (Stockholm)",
+  "raw_aligned_width": 4228,
+  "match_state_L": 410,
+  "seqs_total": 59828,
+  "seqs_kept_maxgap0.5": 35403,
+  "thesis_2022_seqs": 31592,
+  "structure": "8D13 (helical ADP-F-actin, 2.43 A, 3 protomers A/B/C)",
+  "actin_numbering": "chain A residues 5-375; res195=E(GLU), res366=G(GLY) match thesis pair",
+  "registration_identity_consensus_vs_8D13A": 0.948,
+  "cols_mapped_to_structure": 363,
+  "GLU195_dca_col_1based": 189,
+  "GLY366_dca_col_1based": 401
+}
